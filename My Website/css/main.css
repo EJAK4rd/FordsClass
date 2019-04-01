@@ -1,0 +1,278 @@
+
+/*default*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*very top section of homepage*/
+header {
+    background-image: url("../images/starss.jpg");
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: top;
+    width: auto auto 100%;
+    padding: 0px;
+    text-align: center;
+    height: 400px;
+}    
+    header a {
+        color: white;
+        text-decoration: none;
+        align-content: center;
+        display: flex;
+        flex-direction: row;
+    }
+
+/*navigattion top section*/
+nav {
+    background: transparent;
+    width: 100%;
+    margin: 0;
+    padding: 12px;
+    position: relative;
+}
+    nav  a:hover {
+        color: black;
+        transition-delay: initial;
+    }
+        ul {
+            list-style-type: circle;
+        }
+            li {
+                margin-right: auto auto 50px;
+                margin-left: auto auto 50px;
+                display: inline-flex;
+                background: transparent;
+                font-size: 20px;
+                padding: 5px 20px;
+            }
+                li a:hover {
+                    font-size: 20px;
+                }
+            
+/*main page title "mr ford's..." glow effects and formatting*/
+h1 {
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: auto auto 10px;
+    text-transform: uppercase; 
+    transition: all 1ms ease-in-out;
+    color:white;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+@keyframes glow {
+from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0184ac, 0 0 40px #0184ac, 0 0 50px #0184ac, 0 0 60px #0184ac, 0 0 70px #0184ac;
+}
+to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #4dffe1, 0 0 40px #4dffe1, 0 0 50px #4dffe1, 0 0 60px #4dffe1, 0 0 70px #4dffe1, 0 0 80px #4dffe1;
+}}
+
+/*header for the topics homepage*/
+.topicheader {
+    background-color: rgba(13, 135, 172, 0.336);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    border-width: 10px;
+    border-color: #25a7c75d;
+    border-bottom-color: #1f94b157;
+    border-style: outset;
+    }
+    #topicWord {
+        color: rgb(247, 247, 247);
+        font-size: 200%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        letter-spacing: auto auto 30px;
+    }
+ 
+/*background control for all sections*/
+.topicButtons {
+    background-attachment: auto;
+    border-style: double;
+    border-width: 15px;
+    border-color: #bd531648;
+    border-top: transparent;
+    border-bottom: transparent;
+}
+@import "susy";
+@import "compass/reset";
+
+.stars.twinkling {
+    position: absolute;
+	display: block;
+    top:0; 
+    bottom:0;
+    left:0; 
+    right:0;
+    width:100%; 
+    height:100%;
+}
+
+.stars {
+	z-index: 0;
+	background: #000 url('https://image.ibb.co/mjnygo/stars.png') repeat top center;
+}
+
+.twinkling{
+	z-index: 1;
+	background:transparent url('https://image.ibb.co/ir1DE8/twinkling.png') repeat top center;
+	animation: move-twink-back 200s linear infinite;
+}
+
+@keyframes move-twink-back {
+	from {background-position:0 0;}
+	to {background-position:-10000px 5000px;}
+}
+
+/*top row of homepage topics*/
+.toprowtopics {
+    color: black;
+    height: 300px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+}
+    .toprowtopics a {
+        align-content: center;
+        display: inline-block;
+        background-position: center;
+        margin: 30px;
+        width: 250px;
+        height: 250px;
+        font-size: 30px;
+        text-align: center;
+        align-items: baseline;
+        color: black;
+        text-decoration-line: none;
+        border-radius: 10%;
+        transition-duration: 200ms;
+        -webkit-animation: glow 2s ease-in-out infinite alternate;
+        -moz-animation: glow 2s ease-in-out infinite alternate;
+        animation: glow 2s ease-in-out infinite alternate;
+    }
+        .toprowtopics a:hover {
+            margin: 30px;
+            width: 275px;
+            height: 275px;
+}
+            #organismsButton {
+                background-image: url("../images/organisms.jpg")
+            }
+
+            #humanbodyButton {
+                background-image: url("../images/humanbody.jpg")
+            }
+
+            #geneticsButton {
+                background-image: url("../images/genetics.jpg")
+            }
+
+            #forceandmotionButton {
+                background-image: url("../images/forceandmotion.jpg")
+            }
+
+/* middle row of homepage topics*/
+.middlerowtopics {
+    color: black;
+    height: 300px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+    .middlerowtopics a {
+        align-content: center;
+        display: inline-block;
+        background-position: center;
+        margin: 30px;
+        width: 250px;
+        height: 250px;
+        font-size: 30px;
+        text-align: center;
+        color: black;
+        text-decoration-line: none;
+        background-color: blueviolet;
+        border-radius: 10%;
+        transition: 200ms;
+        -webkit-animation: glow 2s ease-in-out infinite alternate;
+        -moz-animation: glow 2s ease-in-out infinite alternate;
+        animation: glow 2s ease-in-out infinite alternate;
+    }
+        .middlerowtopics a:hover {
+            margin: 30px;
+            width: 275px;
+            height: 275px;
+}
+            #matterButton {
+                background-image: url("../images/matter.jpg")
+            }
+            #heattransferButton {
+                background-image: url("../images/heattransfer.jpg")
+            }
+
+            #watercycleButton {
+                background-image: url("../images/watercycle.jpg")
+            }
+
+            #weatherButton {
+                background-image: url("../images/weather.jpg")
+            }
+
+/*bottom row of homepage topics*/
+.bottomrowtopics {
+    color: black;
+    height: 300px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+    .bottomrowtopics a {
+        align-content: center;
+        display: inline-block;
+        background-position: center;
+        margin: 30px;
+        width: 450px;
+        height: 250px;
+        font-size: 30px;
+        text-align: center;
+        align-items: baseline;
+        color: black;
+        text-decoration-line: none;
+        border-radius: 10%;
+        transition-duration: 200ms;
+        -webkit-animation: glow 2s ease-in-out infinite alternate;
+        -moz-animation: glow 2s ease-in-out infinite alternate;
+        animation: glow 2s ease-in-out infinite alternate;
+    }
+        .bottomrowtopics a:hover {
+            margin: 30px;
+            width: 475px;
+            height: 275px;
+        }
+            #eogreviewButton {
+                background-image: url("../images/eogreview.jpg")
+            }
+
+/*footer*/
+footer {
+    background: black;
+    border: white;
+    border-right-width: 10px;
+    color: white;
+    height: auto;
+    text-align: center;
+}

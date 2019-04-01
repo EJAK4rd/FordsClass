@@ -1,0 +1,10 @@
+body {
+    color: black;
+    text-align: center
+}
+
+div {
+    align-items: center;
+    height: 300px;
+    width: 300px;
+}
